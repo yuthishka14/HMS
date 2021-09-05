@@ -39,7 +39,6 @@ function Footer() {
 </div>
 
 <div className="ways">
-<a href="#"> <img src={Cont} width="60" height="30"/></a>
 <a href="https://www.pinterest.com"> <img src={printerest} width="30" height="30"/></a>
 <a href="https://myaccount.google.com"> <img src={Gle} width="30" height="30"/></a>
 <a href="https://twitter.com"> <img src={Twt} width="30" height="30"/></a>
