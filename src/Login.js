@@ -1,7 +1,8 @@
 import React from 'react';
 import './LoginStyle.css';
+import { Route, Link, Switch, BrowserRouter as Router,HashRouter } from 'react-router-dom';  
 
-export default function Login() {
+function Login() {
     return (
         <div>
             <div class="container">
@@ -20,13 +21,15 @@ export default function Login() {
                     <input type="password" name="pass" placeholder="Enter password"></input>
                     <br></br>
                     <button type="submit"> <span><b>submit</b></span></button><br></br>
-                    
-                    <a href ="register.html"><input class="name" type="button" value="Not Register"></input></a><br></br>
+                    <Link to="/Register">Register</Link>
+                    {/* <a href ="/Register"><input class="name" type="button" value="Not Register"></input></a><br></br> */}
                 </form>
                 </div>
         </div>
     )
 }
+
+export default Login;
 
 const onSubmitForm = (event) =>{
     event.preventDefault();
