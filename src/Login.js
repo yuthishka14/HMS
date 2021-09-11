@@ -21,7 +21,7 @@ function Login() {
                     <input type="password" name="pass" placeholder="Enter password"></input>
                     <br></br>
                     <button type="submit"> <span><b>submit</b></span></button><br></br>
-                    <Link to="/Register">Register</Link>
+                    <p>Don't you have an account? <Link to="/Register"> Register</Link></p>
                     {/* <a href ="/Register"><input class="name" type="button" value="Not Register"></input></a><br></br> */}
                 </form>
                 </div>
@@ -33,6 +33,6 @@ export default Login;
 
 const onSubmitForm = (event) =>{
     event.preventDefault();
-
+    
     alert("Form Submitted");
 }

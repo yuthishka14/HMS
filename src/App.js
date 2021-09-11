@@ -8,9 +8,9 @@ import bookroom from './bookroom';
 import labportal from './labportal';
 import Pharmacyportal from './Pharmacyportal ';
 import Register from './Register';
-import { Route, Link, Switch, BrowserRouter as Router,HashRouter } from 'react-router-dom';  
-import reactDom from 'react-dom';
-import { NavLink } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import NotFound from './NotFound';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
@@ -19,18 +19,21 @@ function App() {
       <Router>    
       <div>    
           
-            <li><Link to={'/'} className="nav-link"> Login </Link></li>    
+            {/* <li><Link to={'/'} className="nav-link"> Login </Link></li>    
             <li><Link to={'/Register'} className="nav-link">Register</Link></li>    
-            <li><Link to={'/xx'} className="nav-link">List</Link></li>  
+            <li><Link to={'/xx'} className="nav-link">List</Link></li>   */}
               
         <Switch>    
-          <Route path="/" />   
-          <Route path="/Register" component={Register} /> 
+          <Route exact path="/" component={Login}/>   
+          <Route path="/Register" component={Register}/>
+          <Route path="/PharmacyPortal" component={Pharmacyportal}/> 
+          <Route path="/LabPortal" component={labportal}/>
+          <Route path="/BookRoom" component={bookroom}/>  
+          <Route component={NotFound}/>
         </Switch>    
       </div>    
     </Router>   
-      <Login />
-      <Footer />
+      {/* <Footer /> */}
       {/* <bookroom />
       <labportal />
       <Pharmacyportal/>

@@ -4,7 +4,7 @@ function Register(){
         <body>
         <div class="container">
             
-        <form  method="post">
+        <form>
         <br></br><br></br><br></br>
         <h1 align="center">Patient Register</h1>
         <br></br>
