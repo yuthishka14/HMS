@@ -2,14 +2,14 @@ import React from 'react'
 import Dropdown from '@restart/ui/esm/Dropdown';
 import { DropdownButton } from 'react-bootstrap';
 
-function labportal(){
+function labapoinment(){
     return(
         <body>
             <div class="container">
                 
                 <form>  
                     <br></br><br></br><br></br>
-                    <h1 align="center">Lab Tests</h1>
+                    <h1 align="center">Lab Tests Apoinment </h1>
                     <br></br>
                 
                     <lable><b> Customer Name</b></lable>
@@ -23,11 +23,7 @@ function labportal(){
                     <lable><b>Customer Email</b></lable>
                     <input type="text" name="cusemail" placeholder="Enter Email"></input>
 
-                    <br></br>
-                    <lable><b>Customer Whatsapp No</b></lable>
-                    <input type="int" name="cuswhatsappno" placeholder="Enter whatsapp No"></input>
-
-                    
+                
                     <br></br>
                     <lable><b>Test ID</b></lable>
                     <input type="text" name="testid" placeholder="Enter Test ID"></input>
@@ -55,4 +51,4 @@ function labportal(){
                    
     )
 }
-export default labportal;
+export default labapoinment;

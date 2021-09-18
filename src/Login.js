@@ -1,6 +1,7 @@
 import React from 'react';
 import './LoginStyle.css';
 import { Route, Link, Switch, BrowserRouter as Router,HashRouter } from 'react-router-dom';  
+import Footer from './componenets/Footer/Footer';
 
 function Login() {
     return (
@@ -8,6 +9,7 @@ function Login() {
             <div class="container">
 		
                 <form onSubmit={onSubmitForm}>
+                    <center>
                 <br></br><br></br><br></br>
                 <br></br><br></br><br></br>
                 <h1 align="center">Patient Login</h1>
@@ -21,8 +23,9 @@ function Login() {
                     <input type="password" name="pass" placeholder="Enter password"></input>
                     <br></br>
                     <button type="submit"> <span><b>submit</b></span></button><br></br>
-                    <p>Don't you have an account? <Link to="/Register"> Register</Link></p>
+                    <p>Don't you have an account?<Link to="/Register">Register</Link></p>
                     {/* <a href ="/Register"><input class="name" type="button" value="Not Register"></input></a><br></br> */}
+                </center>
                 </form>
                 </div>
         </div>
@@ -33,6 +36,6 @@ export default Login;
 
 const onSubmitForm = (event) =>{
     event.preventDefault();
-    
+
     alert("Form Submitted");
 }

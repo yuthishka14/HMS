@@ -1,7 +1,11 @@
 import React from 'react'
-function Pharmacyportal(){
+function Pharmacyportal()
+
+
+{
     return(
         <body>
+            
         <div class="container">
             
         <form  method="post">
@@ -39,6 +43,8 @@ function Pharmacyportal(){
             </form>
             
             </div>
+
+            
             </body>
         
 

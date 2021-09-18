@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './componenets/Footer/Footer';
 function bookroom(){
     return(
         <body>
@@ -6,8 +7,12 @@ function bookroom(){
                 
                 <form>
                     <div className="row">
-                        <h1 align="center">Patient Register</h1>
+                        <h1 align="center">Book Hospital Room</h1>
+                        
                         <div className="col-md-6">
+
+                        <br></br>
+                        
                             <lable><b> Room Type</b></lable>
                             <input type="text" name="room type" placeholder="Enter your room type"></input>
 
@@ -37,6 +42,9 @@ function bookroom(){
                         </div>
 
                         <div className="col-md-6">
+
+                        <br></br>
+                        
                             <lable><b>Guardian Name</b></lable>
                             <input type="int" name="gname" placeholder="Enter Name"></input>
 
@@ -53,6 +61,7 @@ function bookroom(){
                             <input type="int" name="gphone" placeholder="Enter mobile no"></input>
                         </div>
                     </div>
+                    
                     <div className="row">
                         <div className="col-md-8" style={{paddingTop: 20, marginTop:10, paddingBottom: '30px'}}>
                             <button> <span><b>submit</b></span></button>

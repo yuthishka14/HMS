@@ -4,7 +4,7 @@ function Register(){
         <body>
         <div class="container">
             
-        <form>
+        <form onSubmit>
         <br></br><br></br><br></br>
         <h1 align="center">Patient Register</h1>
         <br></br>
@@ -33,11 +33,12 @@ function Register(){
             <lable><b>Password</b></lable>
             <input type="password" name="pass" placeholder="Enter your password"></input>
             
-            
-            
+            </form>
+            <center>
             <button> <span><b>submit</b></span></button> 
             <input type="reset" value="Reset" class="reset-button" />
-            </form>
+            </center>
+            
             
             </div>
             </body>
